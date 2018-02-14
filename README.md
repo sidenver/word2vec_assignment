@@ -1,5 +1,5 @@
 # word2vec_assignment
-A pytorch-based word2vec exploratory assignment
+A pytorch-based word2vec exploratory assignment, using jupyter notebook and Python 3.
 
 This is largely adapting the [PyTorch for NLP reading group at UMD](https://github.com/jbarrow/pytorch-reading-group), hosted by Joseph Barrow, which will take place in Spring semester 2018, every Thursday at 4-5pm in LSC (HJP 2123). See the link above for details.
 
@@ -38,7 +38,25 @@ If you are on **Windows**:
 conda env create -f windows_requirements.yml
 ```
 
-If you are having trouble installing PyTorch, it might be useful to read the [installation documentation](http://pytorch.org/). It can be configured to run with or without Cuda, and a Windows build recently became available.
+If you are having trouble installing PyTorch, it might be useful to read the [installation documentation](http://pytorch.org/). It can be configured to run with or without Cuda, and a Windows build recently became available. For the purpose of this assignment, you do not need Cuda installed.
+
+After you sucessfully create the virtual environment, you want to activate it by:
+
+```
+source activate pytorch_w2v
+```
+
+To check if the installation is sucessful, start a jupyter notebook server:
+
+```
+jupyter notebook
+```
+
+You should see a web page pops up in your web browser. Click on `w2v_hw.ipynb`.
+
+Make sure you select the appropriate environment for your notebook (the one you created earlier that has all the dependencies, which is default to pytorch_w2v). Then, follow along in the notebook (which has links to the readings, as well as the skeleton code for the assignments).
+
+
 
 ## Download Data
 
@@ -48,12 +66,3 @@ To download and preprocess the data, run the following commands:
 cd data
 sh fetch_imdb.sh
 ```
-
-Then, start a notebook server:
-
-```
-cd ../
-jupyter notebook
-```
-
-Make sure you select the appropriate environment for your notebook (the one you created earlier that has all the dependencies). Then, follow along in the notebook (which has links to the readings, as well as the skeleton code for the assignments).
