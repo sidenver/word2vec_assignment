@@ -40,6 +40,19 @@ conda env create -f windows_requirements.yml
 
 If you are having trouble installing PyTorch, it might be useful to read the [installation documentation](http://pytorch.org/). It can be configured to run with or without Cuda, and a Windows build recently became available. For the purpose of this assignment, you do not need Cuda installed.
 
+
+## Download Data
+
+To download and preprocess the data, run the following commands:
+
+```
+cd data
+sh fetch_imdb.sh
+```
+
+
+## Starting the Jupyter Notebook
+
 After you sucessfully create the virtual environment, you want to activate it by:
 
 ```
@@ -54,15 +67,5 @@ jupyter notebook
 
 You should see a web page pops up in your web browser. Click on `w2v_hw.ipynb`.
 
-Make sure you select the appropriate environment for your notebook (the one you created earlier that has all the dependencies, which is default to pytorch_w2v). Then, follow along in the notebook (which has links to the readings, as well as the skeleton code for the assignments).
+Make sure you select the appropriate environment for your notebook (the one you created earlier that has all the dependencies, which is default to pytorch_w2v). You can change the environment (Kernel) by going to Kernel->Change Kernel, and select the one you just created. Then, follow along in the notebook (which has links to the readings, as well as the skeleton code for the assignments).
 
-
-
-## Download Data
-
-To download and preprocess the data, run the following commands:
-
-```
-cd data
-sh fetch_imdb.sh
-```
