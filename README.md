@@ -65,7 +65,14 @@ To check if the installation is sucessful, start a jupyter notebook server:
 jupyter notebook
 ```
 
-You should see a web page pops up in your web browser. Click on `w2v_hw.ipynb`.
+You should see a web page pops up in your web browser. Click on the folder `w2v_hw`, and open `w2v_hw.ipynb`.
 
-Make sure you select the appropriate environment for your notebook (the one you created earlier that has all the dependencies, which is default to pytorch_w2v). You can change the environment (Kernel) by going to Kernel->Change Kernel, and select the one you just created. Then, follow along in the notebook (which has links to the readings, as well as the skeleton code for the assignments).
+Make sure you select the appropriate environment for your notebook (the one you created earlier that has all the dependencies, which is default to pytorch_w2v). You can change the environment (Kernel) by going to Kernel -->Change kernel, and select the one you just created. Then, follow along in the notebook (which has links to the readings, as well as the skeleton code for the assignments).
+
+After you finish the assignment, you can deavtivate the environment by:
+
+```
+source deactivate
+```
+
 
