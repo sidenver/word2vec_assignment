@@ -17,5 +17,6 @@ dependencies:
 - pytorch=0.3.0
 - nb_conda=2.2.1
 - progressbar2=3.34.3
+- prettytable=0.7.2
 - pip:
     - torchvision==0.2.0

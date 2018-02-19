@@ -48,18 +48,19 @@ To download and preprocess the data, run the following commands:
 ```
 cd data
 sh fetch_imdb.sh
+cd ..
 ```
 
 
 ## Starting the Jupyter Notebook
 
-After you sucessfully create the virtual environment, you want to activate it by:
+After you sucessfully create the virtual environment, you want to activate it by (assuming you are using bash):
 
 ```
 source activate pytorch_w2v
 ```
 
-To check if the installation is sucessful, start a jupyter notebook server:
+To check if the installation is sucessful, start a jupyter notebook server in the commend line:
 
 ```
 jupyter notebook
@@ -67,9 +68,11 @@ jupyter notebook
 
 You should see a web page pops up in your web browser. Click on the folder `w2v_hw`, and open `w2v_hw.ipynb`.
 
-Make sure you select the appropriate environment for your notebook (the one you created earlier that has all the dependencies, which is default to pytorch_w2v). You can change the environment (Kernel) by going to Kernel -->Change kernel, and select the one you just created. Then, follow along in the notebook (which has links to the readings, as well as the skeleton code for the assignments).
+If you are not familiar with jupyter notebook, [here](http://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Notebook%20Basics.ipynb) and [here](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook##UseJupyter) are two short tutorials. Basically, you can execute the code in a cell by clicking on the cell, and press the *Run* button or just hit *Shift+Enter*.  
 
-After you finish the assignment, you can deavtivate the environment by:
+Make sure you select the appropriate environment for your notebook (the one you created earlier that has all the dependencies, which is default to pytorch_w2v). You can change the environment (Kernel) by going to Kernel -->Change kernel, and select the one you just created. Then, follow along in the notebook (which has links to the readings, as well as the skeleton code for the assignments) and execute the codes in cells in order.
+
+After you finish the assignment, you can deavtivate the environment by (again, assuming you are using bash):
 
 ```
 source deactivate
