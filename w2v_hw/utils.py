@@ -15,7 +15,7 @@ def read_imdb_data(input_dir='../data/aclImdb/train'):
     def _read(directory, label):
         X, y = [], []
         for f in glob.glob(directory):
-            with open(f) as fp:
+            with open(f, encoding='utf-8') as fp:
                 line = fp.read()
                 line = line.lower()
                 line = line.translate(translator)
