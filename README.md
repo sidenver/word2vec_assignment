@@ -105,3 +105,9 @@ source deactivate
 ```
 
 
+## What to Submit
+
+Please submit a PDF writeup that use the same naming convention. 
+
+Please include all the code you used under a `code` directory, including Jupyter notebook, excluding any dataset. Please also put a README for how the code run in the `code` directory, if necessary.
+
