@@ -51,6 +51,32 @@ sh fetch_imdb.sh
 cd ..
 ```
 
+For people using Windows, the `wget` used in the script might fail. In this case, you can try downloading the dataset manually:
+
+1. Click on [Large Movie Review Dataset v1.0](http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz)
+
+   download that to:
+
+   ```
+   YOUR/PATH/TO/word2vec_assignment/data/
+   ```
+
+   `YOUR/PATH/TO` is the path to the directory you git-cloned.
+
+2. extract it with the tool of your choice.
+
+3. delete `aclImdb_v1.tar.gz` to save space.
+
+4. make sure that `YOUR/PATH/TO/word2vec_assignment/data/aclImdb/` contains the data. You should see:
+
+   ```
+   README
+   imdb.vocab
+   imdbEr.txt
+   test/
+   train/
+   ```
+   in that directory
 
 ## Starting the Jupyter Notebook
 
